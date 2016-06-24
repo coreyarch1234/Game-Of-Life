@@ -24,7 +24,7 @@ class Grid: SKSpriteNode {
     var gridArray = [[Creature]]()
     
     // New Creature Object
-    var creature: SKSpriteNode
+    //var creature: SKSpriteNode!
     
     
     
@@ -73,6 +73,7 @@ class Grid: SKSpriteNode {
         
         /* There will only be one touch as multi touch is not enabled by default */
         for touch in touches {
+        
             
             /* Grab position of touch relative to the grid */
             let location  = touch.locationInNode(self)
